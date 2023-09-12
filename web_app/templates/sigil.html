@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigil Generator</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/sigil_generator.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Sigil</h1>
+        <canvas id="sigilCanvas"></canvas>
+        <div class="sigil-info">
+            <h2>Message: {{ sigilData.message }}</h2>
+            <h2>Sigil Code: {{ sigilData.sigilCode }}</h2>
+        </div>
+        <a href="/">Generate another sigil</a>
+    </div>
+</body>
+</html>
